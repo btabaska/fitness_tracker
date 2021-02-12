@@ -12,17 +12,14 @@ const workoutSchema = new Schema({
       type: String,
       enum: ["resistance", "cardio"],
       trim: true,
-      required: true,
     },
     name: {
       type: String,
       trim: true,
-      required: true,
     },
     duration: {
       type: Number,
       min: [0, "Duration too Low"],
-      required: true,
     },
     weight: {
       type: Number,
